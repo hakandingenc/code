@@ -15,7 +15,7 @@ pub fn f_to_c(f: f64) -> f64 {
     // pub: Public, which enables the function to be imported to other modules
     5. / 9. * (f - 32.)
     //1. Implicit conversion for arithmetic operations of different types are not allowed in Rust
-    //2. When the last statement is the return statement, the semicolon is optional (and highly encouraged to be left out).
+    //2. When the last statement is the return statement, the return keyword is optional; in the absence of the `return` keyword, the semicolon must be omitted.
 }
 
 #[cfg(test)] // Run only when in test mode

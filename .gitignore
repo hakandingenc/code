@@ -17,3 +17,6 @@ Cargo.lock
 # IntelliJ IDEA / CLion
 .idea/
 cmake-build-*/
+
+# MacOS folder config
+.DS_Store

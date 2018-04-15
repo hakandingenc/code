@@ -17,13 +17,12 @@ fn main() {
 /// Prompts the user and reads the input.
 fn read_input() -> f64 {
     print!("Enter a temperature in °F:\n> ");
-    io::stdout().flush().unwrap();
+    io::stdout().flush().unwrap(); // unwrap yields the contents of an Ok
 
     let mut input = String::new();
-    io::stdin().read_line(&mut input)
+    io::stdin()
+        .read_line(&mut input)
         .expect("Failed to read temperature");
 
-    input.trim().parse()
-        .expect("Could not parse into number")
+    input.trim().parse().expect("Could not parse into number")
 }
-
